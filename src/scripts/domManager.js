@@ -1,6 +1,5 @@
 const displayContainer = document.querySelector("#display-container")
-let weatherDisplayHTML = ""
-let displayHTML = ""
+
 
 const getWeather = (weather) => {
     const currently = weather.currently.summary
@@ -31,8 +30,4 @@ const parkListToDom = (park) => {
     newArticle.classList= parkValue
     newArticle.innerHTML = displayHtml
     displayContainer.appendChild(newArticle)
-    // getDarkSky(park.latitude, park.longitude)
-    //         .then(() => {
-    //             newArticle.innerHTML = displayHTML + weatherDisplayHTML;
-    //         })
 }
